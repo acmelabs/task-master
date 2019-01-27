@@ -1,20 +1,22 @@
-pplication {
+application {
   config {
     baseName taskMaster
     applicationType monolith
     prodDatabaseType mysql
-    databaseType: sql
-    devDatabaseType: h2Memory
+    devDatabaseType h2Disk
+    authenticationType jwt
+    packageName com.smart.taskmaster
+    cacheProvider ehcache
+    enableHibernateCache true
+    clientFramework react
+    useSass false
+    clientPackageManager npm
+    nativeLanguage en
+    languages [en]
+    serverPort 8091
+    websocket false
+    testFrameworks [protractor,cucumber,gatling]
+    skipUserManagement false
     buildTool gradle
-    cacheProvider: ehcache
-    enableHibernateCache: true
-    useSass: false
-    clientPackageManager: clientPackageManager
-    nativeLanguage: en
-    languages: [en]
-    serverPort: 8088
-    websocket: false
-    testFrameworks: [protractor,cucumber,gatling]
   }
 }
-
