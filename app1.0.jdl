@@ -1,0 +1,20 @@
+pplication {
+  config {
+    baseName taskMaster
+    applicationType monolith
+    prodDatabaseType mysql
+    databaseType: sql
+    devDatabaseType: h2Memory
+    buildTool gradle
+    cacheProvider: ehcache
+    enableHibernateCache: true
+    useSass: false
+    clientPackageManager: clientPackageManager
+    nativeLanguage: en
+    languages: [en]
+    serverPort: 8088
+    websocket: false
+    testFrameworks: [protractor,cucumber,gatling]
+  }
+}
+
