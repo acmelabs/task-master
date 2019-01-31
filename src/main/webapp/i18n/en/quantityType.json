@@ -1,0 +1,11 @@
+{
+  "taskMasterApp": {
+    "QuantityType": {
+      "null": "",
+      "POMODORO": "POMODORO",
+      "MINUTES": "MINUTES",
+      "HOURS": "HOURS",
+      "OTHER": "OTHER"
+    }
+  }
+}

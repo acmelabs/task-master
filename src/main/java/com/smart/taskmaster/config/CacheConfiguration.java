@@ -38,6 +38,14 @@ public class CacheConfiguration {
             cm.createCache(com.smart.taskmaster.domain.User.class.getName(), jcacheConfiguration);
             cm.createCache(com.smart.taskmaster.domain.Authority.class.getName(), jcacheConfiguration);
             cm.createCache(com.smart.taskmaster.domain.User.class.getName() + ".authorities", jcacheConfiguration);
+            cm.createCache(com.smart.taskmaster.domain.Project.class.getName(), jcacheConfiguration);
+            cm.createCache(com.smart.taskmaster.domain.Project.class.getName() + ".tasks", jcacheConfiguration);
+            cm.createCache(com.smart.taskmaster.domain.Task.class.getName(), jcacheConfiguration);
+            cm.createCache(com.smart.taskmaster.domain.Task.class.getName() + ".taskItems", jcacheConfiguration);
+            cm.createCache(com.smart.taskmaster.domain.Task.class.getName() + ".workLogs", jcacheConfiguration);
+            cm.createCache(com.smart.taskmaster.domain.Reminder.class.getName(), jcacheConfiguration);
+            cm.createCache(com.smart.taskmaster.domain.TaskItems.class.getName(), jcacheConfiguration);
+            cm.createCache(com.smart.taskmaster.domain.WorkLog.class.getName(), jcacheConfiguration);
             // jhipster-needle-ehcache-add-entry
         };
     }

@@ -1,0 +1,10 @@
+{
+  "taskMasterApp": {
+    "TaskStatus": {
+      "null": "",
+      "NOT_STARTED": "NOT_STARTED",
+      "STARTED": "STARTED",
+      "COMPLETED": "COMPLETED"
+    }
+  }
+}

@@ -12,6 +12,26 @@ import activate, { ActivateState } from 'app/modules/account/activate/activate.r
 import password, { PasswordState } from 'app/modules/account/password/password.reducer';
 import settings, { SettingsState } from 'app/modules/account/settings/settings.reducer';
 import passwordReset, { PasswordResetState } from 'app/modules/account/password-reset/password-reset.reducer';
+// prettier-ignore
+import project, {
+  ProjectState
+} from 'app/entities/project/project.reducer';
+// prettier-ignore
+import task, {
+  TaskState
+} from 'app/entities/task/task.reducer';
+// prettier-ignore
+import reminder, {
+  ReminderState
+} from 'app/entities/reminder/reminder.reducer';
+// prettier-ignore
+import taskItems, {
+  TaskItemsState
+} from 'app/entities/task-items/task-items.reducer';
+// prettier-ignore
+import workLog, {
+  WorkLogState
+} from 'app/entities/work-log/work-log.reducer';
 /* jhipster-needle-add-reducer-import - JHipster will add reducer here */
 
 export interface IRootState {
@@ -25,6 +45,11 @@ export interface IRootState {
   readonly passwordReset: PasswordResetState;
   readonly password: PasswordState;
   readonly settings: SettingsState;
+  readonly project: ProjectState;
+  readonly task: TaskState;
+  readonly reminder: ReminderState;
+  readonly taskItems: TaskItemsState;
+  readonly workLog: WorkLogState;
   /* jhipster-needle-add-reducer-type - JHipster will add reducer type here */
   readonly loadingBar: any;
 }
@@ -40,6 +65,11 @@ const rootReducer = combineReducers<IRootState>({
   passwordReset,
   password,
   settings,
+  project,
+  task,
+  reminder,
+  taskItems,
+  workLog,
   /* jhipster-needle-add-reducer-combine - JHipster will add reducer here */
   loadingBar
 });

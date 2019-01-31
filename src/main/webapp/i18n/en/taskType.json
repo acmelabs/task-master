@@ -1,0 +1,9 @@
+{
+  "taskMasterApp": {
+    "TaskType": {
+      "null": "",
+      "REPEATIVE": "REPEATIVE",
+      "NON_REPEATIVE": "NON_REPEATIVE"
+    }
+  }
+}

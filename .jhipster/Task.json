@@ -1,0 +1,81 @@
+{
+    "name": "Task",
+    "fields": [
+        {
+            "fieldName": "taskName",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "priority",
+            "fieldType": "Priority",
+            "fieldValues": "LOW,NORMAL,HIGH,VERY_HIGH"
+        },
+        {
+            "fieldName": "dueDate",
+            "fieldType": "Instant"
+        },
+        {
+            "fieldName": "status",
+            "fieldType": "TaskStatus",
+            "fieldValues": "NOT_STARTED,STARTED,COMPLETED"
+        },
+        {
+            "fieldName": "taskType",
+            "fieldType": "TaskType",
+            "fieldValues": "REPEATIVE,NON_REPEATIVE"
+        },
+        {
+            "fieldName": "quantityType",
+            "fieldType": "QuantityType",
+            "fieldValues": "POMODORO,MINUTES,HOURS,OTHER"
+        },
+        {
+            "fieldName": "estimatedQuantity",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "note",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "order",
+            "fieldType": "Integer"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "taskItems",
+            "otherEntityName": "taskItems",
+            "otherEntityRelationshipName": "task"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "workLog",
+            "otherEntityName": "workLog",
+            "otherEntityRelationshipName": "task"
+        },
+        {
+            "relationshipType": "one-to-one",
+            "relationshipName": "reminder",
+            "otherEntityName": "reminder",
+            "ownerSide": false,
+            "otherEntityRelationshipName": "task"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "relationshipName": "project",
+            "otherEntityName": "project",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20190127214752",
+    "entityTableName": "task",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

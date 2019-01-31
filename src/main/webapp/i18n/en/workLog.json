@@ -1,0 +1,23 @@
+{
+  "taskMasterApp": {
+    "workLog": {
+      "home": {
+        "title": "Work Logs",
+        "createLabel": "Create a new Work Log",
+        "createOrEditLabel": "Create or edit a Work Log"
+      },
+      "created": "A new Work Log is created with identifier {{ param }}",
+      "updated": "A Work Log is updated with identifier {{ param }}",
+      "deleted": "A Work Log is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Work Log {{ id }}?"
+      },
+      "detail": {
+        "title": "Work Log"
+      },
+      "workDate": "Work Date",
+      "quantity": "Quantity",
+      "task": "Task"
+    }
+  }
+}

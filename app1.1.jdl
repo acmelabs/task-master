@@ -1,0 +1,62 @@
+
+enum TaskStatus {
+	NOT_STARTED, STARTED, COMPLETED
+}
+
+enum QuantityType {
+	POMODORO, MINUTES, HOURS, OTHER
+}
+
+enum Priority {
+    LOW, NORMAL, HIGH, VERY_HIGH
+}
+
+enum TaskType{
+    REPEATIVE, NON_REPEATIVE
+}
+
+entity Project {
+	name String
+}
+
+entity Task {
+  taskName String
+  priority Priority
+  dueDate Instant
+  status TaskStatus
+  taskType TaskType
+  quantityType QuantityType
+  estimatedQuantity Integer
+  note String
+  order Integer
+}
+
+entity Reminder {
+   reminderDate Instant
+}
+
+entity TaskItems {
+  name String
+}
+
+entity WorkLog {
+  workDate LocalDate
+  quantity Integer
+}
+
+
+relationship OneToMany {
+	Task to TaskItems
+    Project to Task
+    Task to WorkLog
+
+}
+
+relationship OneToOne {
+	Reminder to Task
+}
+
+relationship ManyToOne {
+		Project{user} to User
+}
+

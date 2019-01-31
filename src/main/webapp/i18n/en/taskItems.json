@@ -1,0 +1,22 @@
+{
+  "taskMasterApp": {
+    "taskItems": {
+      "home": {
+        "title": "Task Items",
+        "createLabel": "Create a new Task Items",
+        "createOrEditLabel": "Create or edit a Task Items"
+      },
+      "created": "A new Task Items is created with identifier {{ param }}",
+      "updated": "A Task Items is updated with identifier {{ param }}",
+      "deleted": "A Task Items is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Task Items {{ id }}?"
+      },
+      "detail": {
+        "title": "Task Items"
+      },
+      "name": "Name",
+      "task": "Task"
+    }
+  }
+}
